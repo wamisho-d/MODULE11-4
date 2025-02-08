@@ -8,7 +8,6 @@ const CharacterDetails = () => {
         <div>
             <h2>Character Details</h2>
             <p>Details for character with ID: {id}</p>
-            {/* You can add code here to fetch and display details using the character ID */}
         </div>
     );
 };
