@@ -1,16 +1,25 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const CharacterDetails = () => {
-    const { id } = useParams(); // Retrieve the character ID from the route parameters
+const characters = [
+    { id: 1, name: 'Spider-Man' },
+    { id: 2, name: 'Iron Man' },
+    { id: 3, name: 'Thor' },
+];
 
+const BrowseCharacters = () => {
     return (
         <div>
-            <h2>Character Details</h2>
-            <p>Details for character with ID: {id}</p>
-            {/* You can add code here to fetch and display details using the character ID */}
+            <h2>Browse Characters</h2>
+            <ul>
+                {characters.map(character => (
+                    <li key={character.id}>
+                        <Link to={`/character-details/${character.id}`}>{character.name}</Link>
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 };
 
-export default CharacterDetails;
+export default BrowseCharacters;
