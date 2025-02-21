@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Routes, NavLink } from 'react-router-dom';
-import Home from './components/Home';
-import BrowseCharacters from './components/BrowseCharacters';
-import CharacterDetails from './components/CharacterDetails';
-import Comics from './components/Comics';
-import NotFound from './components/NotFound'; // Import the NotFound component
+import Home from './component/Home';
+import BrowseCharacters from './component/BrowseCharacters';
+import CharacterDetails from './component/CharacterDetails';
+import Comics from './component/Comics';
+import NotFound from './component/NotFound'; 
 
 const App = () => {
     return (
